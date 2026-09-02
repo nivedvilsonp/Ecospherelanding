@@ -1,0 +1,455 @@
+/* =========================================
+   ECOSPHERE POWER SOLUTIONS
+   Premium Mobile Landing Page
+   ========================================= */
+
+
+/* ---------- RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ---------- BASE ---------- */
+
+html {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    background: #031c1f;
+    color: #ffffff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* ---------- MAIN PAGE ---------- */
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background-color: #031c1f;
+
+    background-image:
+        linear-gradient(
+            180deg,
+            rgba(1, 25, 28, 0.12) 0%,
+            rgba(1, 25, 28, 0.28) 55%,
+            rgba(1, 20, 23, 0.48) 100%
+        ),
+        url("images/cover.png");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+/* ---------- CONTENT ---------- */
+
+.content {
+    width: 100%;
+    max-width: 480px;
+
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    padding:
+        48px
+        20px
+        24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ---------- LOGO ---------- */
+
+.logo {
+    width: 245px;
+    max-width: 78%;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    margin-bottom: 24px;
+
+    filter:
+        drop-shadow(
+            0 5px 18px rgba(0, 0, 0, 0.28)
+        );
+}
+
+
+/* ---------- TAGLINE ---------- */
+
+.tagline {
+    width: 100%;
+
+    margin-bottom: 30px;
+
+    text-align: center;
+
+    color: #b9e889;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    line-height: 1.5;
+
+    text-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.45);
+}
+
+
+/* ---------- LINK AREA ---------- */
+
+.links {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* ---------- BUTTON ---------- */
+
+.link-button {
+    width: 100%;
+    min-height: 58px;
+
+    display: grid;
+
+    grid-template-columns:
+        40px
+        1fr
+        30px;
+
+    align-items: center;
+
+    padding:
+        0
+        16px;
+
+    position: relative;
+
+    border:
+        1px solid
+        rgba(151, 218, 122, 0.42);
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(5, 53, 54, 0.76),
+            rgba(2, 31, 34, 0.68)
+        );
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    letter-spacing: 0.15px;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 7px 24px rgba(0, 0, 0, 0.16),
+        inset 0 1px 0 rgba(255, 255, 255, 0.055);
+
+    transition:
+        transform 0.22s ease,
+        background 0.22s ease,
+        border-color 0.22s ease,
+        box-shadow 0.22s ease;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* ---------- ICON ---------- */
+
+.icon {
+    width: 31px;
+    height: 31px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #b4e780;
+
+    background:
+        rgba(137, 214, 104, 0.105);
+
+    border:
+        1px solid
+        rgba(153, 222, 119, 0.18);
+
+    font-size: 17px;
+    font-weight: 600;
+
+    line-height: 1;
+}
+
+
+/* ---------- BUTTON TEXT ---------- */
+
+.button-text {
+    text-align: center;
+
+    padding: 0 8px;
+
+    white-space: nowrap;
+}
+
+
+/* ---------- ARROW ---------- */
+
+.arrow {
+    text-align: right;
+
+    color:
+        rgba(188, 230, 155, 0.78);
+
+    font-size: 18px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    transition:
+        transform 0.22s ease;
+}
+
+
+/* ---------- HOVER ---------- */
+
+.link-button:hover {
+    transform: translateY(-2px);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(31, 91, 67, 0.82),
+            rgba(4, 47, 45, 0.76)
+        );
+
+    border-color:
+        rgba(174, 232, 139, 0.68);
+
+    box-shadow:
+        0 11px 28px rgba(0, 0, 0, 0.22),
+        inset 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+
+
+.link-button:hover .arrow {
+    transform:
+        translate(3px, -2px);
+}
+
+
+/* ---------- CLICK ---------- */
+
+.link-button:active {
+    transform: scale(0.985);
+}
+
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+    margin-top: auto;
+
+    padding-top: 40px;
+
+    color:
+        rgba(255, 255, 255, 0.64);
+
+    font-size: 10px;
+    font-weight: 400;
+
+    letter-spacing: 0.15px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .content {
+        padding:
+            40px
+            18px
+            22px;
+    }
+
+
+    .logo {
+        width: 225px;
+        max-width: 75%;
+
+        margin-bottom: 21px;
+    }
+
+
+    .tagline {
+        margin-bottom: 27px;
+
+        font-size: 10px;
+
+        letter-spacing: 1.6px;
+    }
+
+
+    .links {
+        gap: 11px;
+    }
+
+
+    .link-button {
+        min-height: 56px;
+
+        grid-template-columns:
+            38px
+            1fr
+            25px;
+
+        padding:
+            0
+            14px;
+
+        border-radius: 14px;
+
+        font-size: 14px;
+    }
+
+
+    .icon {
+        width: 30px;
+        height: 30px;
+
+        font-size: 16px;
+    }
+
+
+    .button-text {
+        padding: 0 6px;
+    }
+
+
+    .arrow {
+        font-size: 17px;
+    }
+
+
+    .footer {
+        padding-top: 32px;
+
+        font-size: 9px;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+   ========================================= */
+
+@media (max-width: 360px) {
+
+    .content {
+        padding:
+            32px
+            15px
+            18px;
+    }
+
+
+    .logo {
+        width: 205px;
+        max-width: 78%;
+
+        margin-bottom: 18px;
+    }
+
+
+    .tagline {
+        margin-bottom: 23px;
+
+        font-size: 9px;
+
+        letter-spacing: 1.35px;
+    }
+
+
+    .links {
+        gap: 9px;
+    }
+
+
+    .link-button {
+        min-height: 53px;
+
+        grid-template-columns:
+            35px
+            1fr
+            22px;
+
+        padding:
+            0
+            12px;
+
+        border-radius: 13px;
+
+        font-size: 13px;
+    }
+
+
+    .icon {
+        width: 28px;
+        height: 28px;
+
+        font-size: 15px;
+    }
+}
